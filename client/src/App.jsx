@@ -7,11 +7,13 @@ import Dashboard from './pages/Dashboard'
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import Header from './components/Header'
+import Footer from './components/footer'
 function App() {
   return (
     <div>
       <BrowserRouter>
       <Header/>
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -20,6 +22,7 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   )
